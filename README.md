@@ -59,7 +59,7 @@ Follow these steps to run the Room Scheduler application:
 - When executing commands, the results are displayed within the same interface for convenience.
 - For database considerations, ensure that relevant data is stored without redundancy in the database tables.
 
-For both phases of the project, it is recommended to utilize the GUI designer in NetBeans for efficient GUI development.
+It is recommended to utilize the GUI designer in NetBeans for efficient GUI development.
 
 
 # Academic Integrity Statement
