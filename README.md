@@ -4,36 +4,20 @@
 This project involves the development of a Room Scheduling application for Tiny College. The application allows faculty members to reserve rooms for specific dates based on their seating requirements. It features a graphical user interface (GUI) and utilizes a Derby database for data storage. The application is designed with good Object-Oriented principles in mind, with separate classes for key entities such as Faculty, Room, Date, and Reservations.
 
 ## Program Functionality
-The Room Scheduler application offers a range of functionalities designed to streamline room reservation processes at Tiny College:
 
-1. **Add Faculty**: Add a faculty member to the database, identified by a single name.
-
-2. **Reserve Faculty Date Seats**: Assign a room to a faculty member for a requested date, provided there are available seats. The assignment follows a best-fit approach, allocating the smallest available room that meets the seating requirements. If no suitable rooms are available, the faculty member is placed on the waiting list.
-
-3. **Status Reservations by Date**: Display faculty members with room reservations on a specific date.
-
-4. **Status Waiting List**: Display faculty members on the waiting list, ordered by the date of reservation request.
-
-5. **Add Room Seats**: Add a new room to the system, specifying the room name and the number of seats in the room. When a room is added, it checks the waiting list for faculty members who were waiting for a room on all reserved dates and assigns them rooms accordingly.
-
-6. **Add Date**: Add a new date to the system for which rooms can be reserved.
-
-7. **Cancel Reservation Faculty Date**: Remove a reservation for a faculty member on a specific date. If the reservation is removed, the application checks the waiting list to see if another faculty member can be booked for that room and date, considering seat requirements.
-
-8. **Status Faculty member**: Display room and date information for each room reserved by or waitlisted for a faculty member.
-
-9. **Drop Room**: Remove a room from the application. Any faculty members who had reservations for that room on any date are assigned alternative rooms if possible, following priority sequence. If a faculty member cannot get a new room, they are placed on the waitlist.
+- **Room Management:** Allows users to add, modify, and delete rooms.
+- **Reservation System:** Enables users to reserve rooms based on availability and specific criteria.
+- **Waitlist Feature:** In case a room is not available, users can be added to a waitlist and be notified when the room becomes available.
+- **Faculty Interface:** Special interface for faculty members to manage their room requirements.
+- **Reporting:** Generate reports on room utilization, reservation history, and waitlist status.
 
 ## Software Setup
-To set up the Room Scheduler application, follow these steps:
 
-1. **Java Development Environment**: Ensure you have Java Development Kit (JDK) installed on your system. You can download it from [Oracle's website](https://www.oracle.com/java/technologies/javase-downloads.html).
-
-2. **NetBeans IDE**: It is recommended to use the NetBeans IDE for this project, particularly for the GUI design. You can download NetBeans from [here](https://netbeans.apache.org/download/index.html).
-
-3. **Derby Database**: The application uses the Derby database. You can find more information and download Derby from [here](https://db.apache.org/derby/).
-
-4. **Database Configuration**: Configure your Derby database and set up the necessary tables (Rooms, Dates, Faculty, Reservations) as per project requirements. Refer to the provided testing scenario for guidance on preloading data.
+1. **Clone the Repository:** Use the command `git clone https://github.com/saisanwariya/RoomScheduler-ForCollege.git` to clone the repository to your local machine.
+2. **Database Setup:** Ensure that you have the necessary database drivers and configurations set up. Follow the instructions in `DBConnection.java` to establish a connection.
+3. **Java Development Environment**: Ensure you have Java Development Kit (JDK) installed on your system. You can download it from [Oracle's website](https://www.oracle.com/java/technologies/javase-downloads.html).
+4. **NetBeans IDE**: It is recommended to use the NetBeans IDE for this project, particularly for the GUI design. You can download NetBeans from [here](https://netbeans.apache.org/download/index.html).
+5. **Derby Database**: The application uses the Derby database. You can find more information and download Derby from [here](https://db.apache.org/derby/).
 
 ## Running the Program
 Follow these steps to run the Room Scheduler application:
@@ -54,13 +38,13 @@ Follow these steps to run the Room Scheduler application:
    - **Checking Faculty Status**: Check the status of faculty members' reservations and waitlists.
    - **Dropping Rooms**: Remove rooms from the application.
 
-## Notes
-- The GUI has been designed to make data entry and information retrieval user-friendly, with drop-down lists and combo boxes for known data.
-- When executing commands, the results are displayed within the same interface for convenience.
-- For database considerations, ensure that relevant data is stored without redundancy in the database tables.
+# Notes
 
-It is recommended to utilize the GUI designer in NetBeans for efficient GUI development.
+- Ensure that the database server is running before executing the program.
+- Always back up your data before making any significant changes or updates.
+- For any issues or bugs, please raise a ticket in the GitHub repository's "Issues" section.
 
+---
 
 # Academic Integrity Statement
 
