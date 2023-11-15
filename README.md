@@ -1,4 +1,4 @@
-# Room Scheduler Application
+<h1 align="center">Room Scheduler Application</h1>
 
 ## Overview
 This project involves the development of a Room Scheduling application for Tiny College. The application allows faculty members to reserve rooms for specific dates based on their seating requirements. It features a graphical user interface (GUI) and utilizes a Derby database for data storage. The application is designed with good Object-Oriented principles in mind, with separate classes for key entities such as Faculty, Room, Date, and Reservations.
